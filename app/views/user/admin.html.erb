@@ -1,0 +1,13 @@
+
+       
+    <table class="table table-bordered">
+          <thead>
+            <tr><td colspan="2" align="center"><h4>User to approve</h4></td></tr>
+          </thead>
+           <tbody>
+               <% @users.each do |user| %>
+               <tr><td>User email</td><td><%= user.email %> </td></tr>
+               <tr><td>Approved?</td><td><%= user.approved %> </td></tr>
+               <% end %>
+           </tbody>
+    </table>
